@@ -1,0 +1,47 @@
+.sidebar {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 70px);
+  background-color: #f4f4f4;
+  padding: 10px 0;
+}
+.tasks-sidebar {
+  margin-top: 30px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+}
+a.task-item-sidebar {
+  height: 36px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+a.task-item-sidebar:hover {
+  background-color: #fafafa;
+}
+a.task-item-sidebar.active,
+a.task-item-sidebar.active:hover {
+  background-color: #ededed;
+}
+.task-item-sidebar-icon {
+  color: #34373d;
+}
+.task-item-sidebar-text {
+  color: #34373d;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 10px;
+}
+.task-item-sidebar-count {
+  color: #34373d;
+}
+a.task-item-sidebar.active > .task-item-sidebar-icon,
+a.task-item-sidebar.active > .task-item-sidebar-text,
+a.task-item-sidebar.active > .task-item-sidebar-count {
+  font-weight: bold;
+}
